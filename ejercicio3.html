@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN-N-OUT BURGER</title>
+    <link rel="stylesheet" href="asset/css/ejerc1.css">
+</head>
+
+<body>
+
+    <h2>IN-N-OUT BURGER - Cálculo de Pago</h2>
+
+    <label>Número de Hamburguesas:</label>
+    <input type="number" id="cantidad">
+
+    <label>Tipo de Hamburguesa:</label>
+    <select id="tipoHamburguesa">
+        <option value="sencilla">Sencilla</option>
+        <option value="doble">Doble</option>
+    </select>
+
+    <label>Tipo de pago:</label>
+    <select id="tipoPago">
+        <option value="efectivo">Efectivo</option>
+        <option value="tarjeta">Tarjeta</option>
+    </select>
+
+    
+    <button id="btnSalir" onclick="window.location.href='menu.html'">Salir</button>
+
+    <p id="resultado"></p>
+
+    <button id="btnSalir" onclick="salir()">Salir</button>
+
+    <script type="text/javascript" src="asset/js/ejerc3.js"></script>
+</body>
+
+</html>

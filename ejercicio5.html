@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fedepanela - Pago por Panela</title>
+    <link rel="stylesheet" href="asset/css/ejerc1.css">
+</head>
+<body>
+
+    <h2>Fedepanela - Cálculo de pago al productor</h2>
+
+    <label for="tipo">Tipo de panela (P1 o P2):</label>
+    <select id="tipo">
+        <option value="P1">P1</option>
+        <option value="P2">P2</option>
+    </select>
+
+    <label for="tam">Tamaño de la panela (1 o 2):</label>
+    <select id="tam">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+
+    <label for="precio">Precio inicial por kilo (ej. 4500):</label>
+    <input type="number" id="precio" step="1" min="0" placeholder="Ingrese precio por kilo">
+
+    <label for="kilos">Kilos de producción:</label>
+    <input type="number" id="kilos" step="0.01" min="0" placeholder="Ingrese kilos entregados">
+
+    <button id="btnCalcular" onclick="calcular()">Calcular Ganancia</button>
+
+    <p id="resultado"></p>
+
+    
+    <button id="btnSalir" onclick="window.location.href='menu.html'">Salir</button>
+
+    <script type="text/javascript" src="asset/js/ejerc5.js"></script>
+</body>
+</html>
